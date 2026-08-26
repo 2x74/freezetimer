@@ -80,7 +80,7 @@ public Action Cmd_FreezeTimer(int client, int args)
 		return Plugin_Handled;
 	}
 
-	if (CheckCommandAccess(client, "sm_freezetimer", ADMFLAG_GENERIC, true))
+	if (CheckCommandAccess(client, "sm_freezetimer", ADMFLAG_GENERIC, false))
 	{
 		DoFreeze(client, true);
 	}
@@ -99,7 +99,7 @@ public Action Cmd_UnfreezeTimer(int client, int args)
 		return Plugin_Handled;
 	}
 
-	if (CheckCommandAccess(client, "sm_unfreezetimer", ADMFLAG_GENERIC, true))
+	if (CheckCommandAccess(client, "sm_unfreezetimer", ADMFLAG_GENERIC, false))
 	{
 		DoUnfreeze(client, true);
 	}
